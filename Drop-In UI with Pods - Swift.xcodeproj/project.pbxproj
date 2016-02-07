@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44120A731C65301F00632D4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44120A721C65301F00632D4B /* AppDelegate.swift */; };
+		44120A751C65301F00632D4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44120A741C65301F00632D4B /* ViewController.swift */; };
+		44120A781C65301F00632D4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44120A761C65301F00632D4B /* Main.storyboard */; };
+		44120A7A1C65301F00632D4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44120A791C65301F00632D4B /* Assets.xcassets */; };
+		44120A7D1C65301F00632D4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44120A7B1C65301F00632D4B /* LaunchScreen.storyboard */; };
+		44120A881C65301F00632D4B /* Drop_In_UI_with_Pods___SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44120A871C65301F00632D4B /* Drop_In_UI_with_Pods___SwiftTests.swift */; };
+		44120A931C65301F00632D4B /* Drop_In_UI_with_Pods___SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44120A921C65301F00632D4B /* Drop_In_UI_with_Pods___SwiftUITests.swift */; };
+		448A92AE1C6640E9007CD1DC /* zakk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 448A92AD1C6640E9007CD1DC /* zakk.jpg */; };
+		448A92B01C6640EF007CD1DC /* ibanez.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 448A92AF1C6640EF007CD1DC /* ibanez.jpg */; };
+		D8084652278DD79B4C53BDD6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D27C7CAA253DCF44C8E80C /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44120A841C65301F00632D4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44120A671C65301F00632D4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44120A6E1C65301F00632D4B;
+			remoteInfo = "Drop-In UI with Pods - Swift";
+		};
+		44120A8F1C65301F00632D4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44120A671C65301F00632D4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44120A6E1C65301F00632D4B;
+			remoteInfo = "Drop-In UI with Pods - Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44120A6F1C65301F00632D4B /* Drop-In UI with Pods - Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drop-In UI with Pods - Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44120A721C65301F00632D4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44120A741C65301F00632D4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44120A771C65301F00632D4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44120A791C65301F00632D4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44120A7C1C65301F00632D4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44120A7E1C65301F00632D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44120A831C65301F00632D4B /* Drop-In UI with Pods - SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Drop-In UI with Pods - SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44120A871C65301F00632D4B /* Drop_In_UI_with_Pods___SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drop_In_UI_with_Pods___SwiftTests.swift"; sourceTree = "<group>"; };
+		44120A891C65301F00632D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44120A8E1C65301F00632D4B /* Drop-In UI with Pods - SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Drop-In UI with Pods - SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44120A921C65301F00632D4B /* Drop_In_UI_with_Pods___SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drop_In_UI_with_Pods___SwiftUITests.swift"; sourceTree = "<group>"; };
+		44120A941C65301F00632D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		448A92AD1C6640E9007CD1DC /* zakk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zakk.jpg; sourceTree = "<group>"; };
+		448A92AF1C6640EF007CD1DC /* ibanez.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ibanez.jpg; sourceTree = "<group>"; };
+		448A92B11C664AE6007CD1DC /* DropIn UI-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DropIn UI-Bridging-Header.h"; sourceTree = "<group>"; };
+		47124D64A0DB4DAA63F03CB3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C7109D0A0FC6BF4C73DF4E02 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F2D27C7CAA253DCF44C8E80C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44120A6C1C65301F00632D4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8084652278DD79B4C53BDD6 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44120A801C65301F00632D4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44120A8B1C65301F00632D4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28D80923C1F6F79EFD1BAEB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47124D64A0DB4DAA63F03CB3 /* Pods.debug.xcconfig */,
+				C7109D0A0FC6BF4C73DF4E02 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		44120A661C65301F00632D4B = {
+			isa = PBXGroup;
+			children = (
+				44120A711C65301F00632D4B /* Drop-In UI with Pods - Swift */,
+				44120A861C65301F00632D4B /* Drop-In UI with Pods - SwiftTests */,
+				44120A911C65301F00632D4B /* Drop-In UI with Pods - SwiftUITests */,
+				44120A701C65301F00632D4B /* Products */,
+				EF4721C03D8B0066F1AA50A1 /* Frameworks */,
+				28D80923C1F6F79EFD1BAEB0 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		44120A701C65301F00632D4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44120A6F1C65301F00632D4B /* Drop-In UI with Pods - Swift.app */,
+				44120A831C65301F00632D4B /* Drop-In UI with Pods - SwiftTests.xctest */,
+				44120A8E1C65301F00632D4B /* Drop-In UI with Pods - SwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44120A711C65301F00632D4B /* Drop-In UI with Pods - Swift */ = {
+			isa = PBXGroup;
+			children = (
+				44120A721C65301F00632D4B /* AppDelegate.swift */,
+				448A92B11C664AE6007CD1DC /* DropIn UI-Bridging-Header.h */,
+				44120A741C65301F00632D4B /* ViewController.swift */,
+				44120A761C65301F00632D4B /* Main.storyboard */,
+				44120A791C65301F00632D4B /* Assets.xcassets */,
+				44120A7B1C65301F00632D4B /* LaunchScreen.storyboard */,
+				44120A7E1C65301F00632D4B /* Info.plist */,
+				448A92AD1C6640E9007CD1DC /* zakk.jpg */,
+				448A92AF1C6640EF007CD1DC /* ibanez.jpg */,
+			);
+			path = "Drop-In UI with Pods - Swift";
+			sourceTree = "<group>";
+		};
+		44120A861C65301F00632D4B /* Drop-In UI with Pods - SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				44120A871C65301F00632D4B /* Drop_In_UI_with_Pods___SwiftTests.swift */,
+				44120A891C65301F00632D4B /* Info.plist */,
+			);
+			path = "Drop-In UI with Pods - SwiftTests";
+			sourceTree = "<group>";
+		};
+		44120A911C65301F00632D4B /* Drop-In UI with Pods - SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44120A921C65301F00632D4B /* Drop_In_UI_with_Pods___SwiftUITests.swift */,
+				44120A941C65301F00632D4B /* Info.plist */,
+			);
+			path = "Drop-In UI with Pods - SwiftUITests";
+			sourceTree = "<group>";
+		};
+		EF4721C03D8B0066F1AA50A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2D27C7CAA253DCF44C8E80C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44120A6E1C65301F00632D4B /* Drop-In UI with Pods - Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44120A971C65301F00632D4B /* Build configuration list for PBXNativeTarget "Drop-In UI with Pods - Swift" */;
+			buildPhases = (
+				8C42B941E0733106ECD3E5F0 /* Check Pods Manifest.lock */,
+				44120A6B1C65301F00632D4B /* Sources */,
+				44120A6C1C65301F00632D4B /* Frameworks */,
+				44120A6D1C65301F00632D4B /* Resources */,
+				B74901C675550039D43D45AF /* Embed Pods Frameworks */,
+				E2688BEA493A5DB81070477A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Drop-In UI with Pods - Swift";
+			productName = "Drop-In UI with Pods - Swift";
+			productReference = 44120A6F1C65301F00632D4B /* Drop-In UI with Pods - Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44120A821C65301F00632D4B /* Drop-In UI with Pods - SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44120A9A1C65301F00632D4B /* Build configuration list for PBXNativeTarget "Drop-In UI with Pods - SwiftTests" */;
+			buildPhases = (
+				44120A7F1C65301F00632D4B /* Sources */,
+				44120A801C65301F00632D4B /* Frameworks */,
+				44120A811C65301F00632D4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44120A851C65301F00632D4B /* PBXTargetDependency */,
+			);
+			name = "Drop-In UI with Pods - SwiftTests";
+			productName = "Drop-In UI with Pods - SwiftTests";
+			productReference = 44120A831C65301F00632D4B /* Drop-In UI with Pods - SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44120A8D1C65301F00632D4B /* Drop-In UI with Pods - SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44120A9D1C65301F00632D4B /* Build configuration list for PBXNativeTarget "Drop-In UI with Pods - SwiftUITests" */;
+			buildPhases = (
+				44120A8A1C65301F00632D4B /* Sources */,
+				44120A8B1C65301F00632D4B /* Frameworks */,
+				44120A8C1C65301F00632D4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44120A901C65301F00632D4B /* PBXTargetDependency */,
+			);
+			name = "Drop-In UI with Pods - SwiftUITests";
+			productName = "Drop-In UI with Pods - SwiftUITests";
+			productReference = 44120A8E1C65301F00632D4B /* Drop-In UI with Pods - SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44120A671C65301F00632D4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Orcun;
+				TargetAttributes = {
+					44120A6E1C65301F00632D4B = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					44120A821C65301F00632D4B = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9A3TTZETCF;
+						TestTargetID = 44120A6E1C65301F00632D4B;
+					};
+					44120A8D1C65301F00632D4B = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9A3TTZETCF;
+						TestTargetID = 44120A6E1C65301F00632D4B;
+					};
+				};
+			};
+			buildConfigurationList = 44120A6A1C65301F00632D4B /* Build configuration list for PBXProject "Drop-In UI with Pods - Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44120A661C65301F00632D4B;
+			productRefGroup = 44120A701C65301F00632D4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44120A6E1C65301F00632D4B /* Drop-In UI with Pods - Swift */,
+				44120A821C65301F00632D4B /* Drop-In UI with Pods - SwiftTests */,
+				44120A8D1C65301F00632D4B /* Drop-In UI with Pods - SwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44120A6D1C65301F00632D4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				448A92B01C6640EF007CD1DC /* ibanez.jpg in Resources */,
+				44120A7D1C65301F00632D4B /* LaunchScreen.storyboard in Resources */,
+				448A92AE1C6640E9007CD1DC /* zakk.jpg in Resources */,
+				44120A7A1C65301F00632D4B /* Assets.xcassets in Resources */,
+				44120A781C65301F00632D4B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44120A811C65301F00632D4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44120A8C1C65301F00632D4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C42B941E0733106ECD3E5F0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B74901C675550039D43D45AF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2688BEA493A5DB81070477A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44120A6B1C65301F00632D4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44120A751C65301F00632D4B /* ViewController.swift in Sources */,
+				44120A731C65301F00632D4B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44120A7F1C65301F00632D4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44120A881C65301F00632D4B /* Drop_In_UI_with_Pods___SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44120A8A1C65301F00632D4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44120A931C65301F00632D4B /* Drop_In_UI_with_Pods___SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44120A851C65301F00632D4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44120A6E1C65301F00632D4B /* Drop-In UI with Pods - Swift */;
+			targetProxy = 44120A841C65301F00632D4B /* PBXContainerItemProxy */;
+		};
+		44120A901C65301F00632D4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44120A6E1C65301F00632D4B /* Drop-In UI with Pods - Swift */;
+			targetProxy = 44120A8F1C65301F00632D4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44120A761C65301F00632D4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44120A771C65301F00632D4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44120A7B1C65301F00632D4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44120A7C1C65301F00632D4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44120A951C65301F00632D4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44120A961C65301F00632D4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44120A981C65301F00632D4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47124D64A0DB4DAA63F03CB3 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Drop-In UI with Pods - Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "OKAppz.Drop-In-UI-with-Pods---Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Drop-In UI with Pods - Swift/DropIn UI-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		44120A991C65301F00632D4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7109D0A0FC6BF4C73DF4E02 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Drop-In UI with Pods - Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "OKAppz.Drop-In-UI-with-Pods---Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Drop-In UI with Pods - Swift/DropIn UI-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		44120A9B1C65301F00632D4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Drop-In UI with Pods - SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "OKAppz.Drop-In-UI-with-Pods---SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drop-In UI with Pods - Swift.app/Drop-In UI with Pods - Swift";
+			};
+			name = Debug;
+		};
+		44120A9C1C65301F00632D4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Drop-In UI with Pods - SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "OKAppz.Drop-In-UI-with-Pods---SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drop-In UI with Pods - Swift.app/Drop-In UI with Pods - Swift";
+			};
+			name = Release;
+		};
+		44120A9E1C65301F00632D4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Drop-In UI with Pods - SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "OKAppz.Drop-In-UI-with-Pods---SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Drop-In UI with Pods - Swift";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		44120A9F1C65301F00632D4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Drop-In UI with Pods - SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "OKAppz.Drop-In-UI-with-Pods---SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Drop-In UI with Pods - Swift";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44120A6A1C65301F00632D4B /* Build configuration list for PBXProject "Drop-In UI with Pods - Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44120A951C65301F00632D4B /* Debug */,
+				44120A961C65301F00632D4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44120A971C65301F00632D4B /* Build configuration list for PBXNativeTarget "Drop-In UI with Pods - Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44120A981C65301F00632D4B /* Debug */,
+				44120A991C65301F00632D4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44120A9A1C65301F00632D4B /* Build configuration list for PBXNativeTarget "Drop-In UI with Pods - SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44120A9B1C65301F00632D4B /* Debug */,
+				44120A9C1C65301F00632D4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44120A9D1C65301F00632D4B /* Build configuration list for PBXNativeTarget "Drop-In UI with Pods - SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44120A9E1C65301F00632D4B /* Debug */,
+				44120A9F1C65301F00632D4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44120A671C65301F00632D4B /* Project object */;
+}
