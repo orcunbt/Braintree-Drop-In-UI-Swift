@@ -15,8 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        BTAppSwitch.setReturnURLScheme("OKAppz.Drop-In-UI-with-Pods---Swift.payments")
         return true
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        if url.scheme.localizedCaseInsensitiveCompare("OKAppz.Drop-In-UI-with-Pods---Swift.payments") == .OrderedSame {
+            return BTAppSwitch.handleOpenURL(url, sourceApplication:sourceApplication)
+        }
+        return false
     }
 
     func applicationWillResignActive(application: UIApplication) {
