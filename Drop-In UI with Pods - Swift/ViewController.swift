@@ -36,17 +36,17 @@ class ViewController: UIViewController, BTDropInViewControllerDelegate {
         buy01Button.tag=1
         buy02Button.tag=2
         
-        buy01Button.addTarget(self, action: "buttonClicked:", forControlEvents: .TouchUpInside)
-        buy02Button.addTarget(self, action: "buttonClicked:", forControlEvents: .TouchUpInside)
+        buy01Button.addTarget(self, action: #selector(ViewController.buttonClicked(_:)), for: .touchUpInside)
+        buy02Button.addTarget(self, action: #selector(ViewController.buttonClicked(_:)), for: .touchUpInside)
 
         
-        let clientTokenURL = NSURL(string: "http://orcodevbox.co.uk/BTOrcun/tokenGen.php")!
-        let clientTokenRequest = NSMutableURLRequest(URL: clientTokenURL)
+        let clientTokenURL = URL(string: "http://orcodevbox.co.uk/BTOrcun/tokenGen.php")!
+        let clientTokenRequest = NSMutableURLRequest(url: clientTokenURL)
         clientTokenRequest.setValue("text/plain", forHTTPHeaderField: "Accept")
         
-        NSURLSession.sharedSession().dataTaskWithRequest(clientTokenRequest) { (data, response, error) -> Void in
+         URLSession.shared.dataTask(with: clientTokenRequest as URLRequest) { (data, response, error) -> Void in
             // TODO: Handle errors
-            let clientToken = String(data: data!, encoding: NSUTF8StringEncoding)
+            let clientToken = String(data: data!, encoding: String.Encoding.utf8)
             
             self.braintreeClient = BTAPIClient(authorization: clientToken!)
             
@@ -55,11 +55,11 @@ class ViewController: UIViewController, BTDropInViewControllerDelegate {
             
             // As an example, you may wish to present our Drop-in UI at this point.
             // Continue to the next section to learn more...
-            }.resume()
+            } .resume()
     }
     
     // Setup the appropriate amount and item name for each button
-    func buttonClicked(sender: AnyObject)
+    func buttonClicked(_ sender: AnyObject)
     {
         switch sender.tag {
         case 1:
@@ -94,7 +94,7 @@ class ViewController: UIViewController, BTDropInViewControllerDelegate {
         // braintreeClient = BTAPIClient(authorization: aClientToken)
         
         // Create a BTDropInViewController
-        let dropInViewController = BTDropInViewController(APIClient: braintreeClient!)
+        let dropInViewController = BTDropInViewController(apiClient: braintreeClient!)
         dropInViewController.delegate = self
         
         // This is where you might want to customize your view controller (see below)
@@ -102,60 +102,60 @@ class ViewController: UIViewController, BTDropInViewControllerDelegate {
         // The way you present your BTDropInViewController instance is up to you.
         // In this example, we wrap it in a new, modally-presented navigation controller:
         dropInViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: UIBarButtonSystemItem.Cancel,
-            target: self, action: "userDidCancelPayment")
+            barButtonSystemItem: UIBarButtonSystemItem.cancel,
+            target: self, action: #selector(ViewController.userDidCancelPayment))
         let navigationController = UINavigationController(rootViewController: dropInViewController)
-        presentViewController(navigationController, animated: true, completion: nil)
+        present(navigationController, animated: true, completion: nil)
 
         
            }
     
     func userDidCancelPayment() {
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
-    func dropInViewController(viewController: BTDropInViewController,
+    func drop(_ viewController: BTDropInViewController,
         didSucceedWithTokenization paymentMethodNonce: BTPaymentMethodNonce)
     {
         
         // Send payment method nonce to your server for processing
         postNonceToServer(paymentMethodNonce.nonce)
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
         
         // Log the payment nonce to confirm it's successfully generated
          print("Payment nonce: \(paymentMethodNonce.nonce)")
     }
     
-    func dropInViewControllerDidCancel(viewController: BTDropInViewController) {
-        dismissViewControllerAnimated(true, completion: nil)
+    func drop(inViewControllerDidCancel viewController: BTDropInViewController) {
+        dismiss(animated: true, completion: nil)
     }
     
-    func postNonceToServer(paymentMethodNonce: String) {
-        let paymentURL = NSURL(string: "http://orcodevbox.co.uk/BTOrcun/iosPayment.php")!
-        let request = NSMutableURLRequest(URL: paymentURL)
-        request.HTTPBody = "amount=\(Double(price))&payment_method_nonce=\(paymentMethodNonce)".dataUsingEncoding(NSUTF8StringEncoding);
-        request.HTTPMethod = "POST"
+    func postNonceToServer(_ paymentMethodNonce: String) {
+        let paymentURL = URL(string: "http://orcodevbox.co.uk/BTOrcun/iosPayment.php")!
+        let request = NSMutableURLRequest(url: paymentURL)
+        request.httpBody = "amount=\(Double(price))&payment_method_nonce=\(paymentMethodNonce)".data(using: String.Encoding.utf8);
+        request.httpMethod = "POST"
         
         
-        NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
+        URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) -> Void in
             // TODO: Handle success or failure
-            let responseData = String(data: data!, encoding: NSUTF8StringEncoding)
+            let responseData = String(data: data!, encoding: String.Encoding.utf8)
             // Log the response in console
             print(responseData);
             
             // Display the result in an alert view
-            dispatch_async(dispatch_get_main_queue(), {
-                let alertResponse = UIAlertController(title: "Result", message: "\(responseData)", preferredStyle: UIAlertControllerStyle.Alert)
+            DispatchQueue.main.async(execute: {
+                let alertResponse = UIAlertController(title: "Result", message: "\(responseData)", preferredStyle: UIAlertControllerStyle.alert)
                 
                 // add an action to the alert (button)
-                alertResponse.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                alertResponse.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
                 
                 // show the alert
-                self.presentViewController(alertResponse, animated: true, completion: nil)
+                self.present(alertResponse, animated: true, completion: nil)
                 
             })
 
-            }.resume()
+            } .resume()
     }
     
     
